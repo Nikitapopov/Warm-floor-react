@@ -1,0 +1,82 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+@import "assets/fonts/fonts"
+@import "../node_modules/normalize.css"
+
+$font-size-large: 15px
+$font-size-small: 14px
+
+html
+  font-size: $font-size-large
+  @media screen and (max-width: 767px)
+    font-size: $font-size-small
+
+body
+  margin: 0
+  font-family: PTSans, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  line-height: 1.2
+  background: url("assets/img/texture.webp")
+
+code
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace
+
+
+*, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+.col-7, .col-8, .col-9, .col-10, .col-11, .col-12,
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6,
+.col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12,
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6,
+.col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12,
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6,
+.col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12,
+.row, p, ul, h1, h2, h3, h4, h5, h6
+  padding: 0
+  margin: 0
+
+.container_decoration
+  background: rgba(255, 255, 255, 1)
+  padding: 0
+  height: 100%
+  width: 85%
+  @media screen and (max-width: 767px)
+    width: 95%
+  @media screen and (max-width: 575px)
+    width: 100%
+  @media screen and (min-width: 1px)
+    max-width: 1500px
+
+.section
+  padding-top: 70px
+  @media screen and (max-width: 380px)
+    padding-top: 60px
+
+.section__titleBox
+  padding: 15px 15px 10px 45px
+  @media screen and (max-width: 575px)
+    padding: 10px 15px 10px 14px
+
+.section__title
+  font-size: 2.5rem
+  @media screen and (max-width: 650px)
+    font-size: 2.1rem
+  @media screen and (max-width: 400px)
+    font-size: 1.7rem
+
+.section__text
+  font-size: 1rem
+  padding: 10px 20px 20px
+
+.sectionMiddleTitle
+  font-size: 2.5rem
+  padding: 20px
+  @media screen and (max-width: 650px)
+    font-size: 2.1rem
+  @media screen and (max-width: 400px)
+    font-size: 1.7rem
+    padding: 10px
+  text-align: center
+
+.paginatorBox
+  padding: 20px 0
+  text-align: center

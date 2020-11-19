@@ -1,0 +1,94 @@
+@import './../../../assets/global-styles/styles'
+
+.imageGalleryBox
+  padding-bottom: 10px
+
+.product__info
+  padding: 5px 20px
+
+.product__nameBox
+  font-size: 1.8rem
+  padding-bottom: 10px
+
+.product__priceBox
+  font-size: 1.5rem
+  padding-bottom: 20px
+
+.product__currentPrice
+  display: inline
+  margin-right: 20px
+  color: $basicRedColor
+
+.product__primaryPrice
+  display: inline
+  font-size: 1.3rem
+  color: $basicRedColor
+  text-decoration: line-through
+
+.product__primaryPrice span
+  color: black
+
+.product__descriptionBox
+  font-size: 1rem
+  line-height: 1.2
+  text-align: justify
+
+.product__descriptionBox p
+  white-space: pre-line
+
+$tableBorderRadius: 5px
+$tableBorderWidth: 0.5px
+
+.product__tableBox
+  overflow-x: auto
+  padding: 20px 10%
+  @media screen and (max-width: 767px)
+    padding: 10px 1% 15px
+
+.product__table
+  border-radius: $tableBorderRadius
+  width: 100%
+  border-collapse: collapse
+  text-align: center
+  box-shadow: 0 0 0 2*$tableBorderWidth $basicPurpleColor
+  font-weight: normal
+
+.product__table th:first-child
+  border-top-left-radius: $tableBorderRadius
+.product__table th:last-child
+  border-top-right-radius: $tableBorderRadius
+.product__table tr:last-child td:first-child
+  border-bottom-left-radius: $tableBorderRadius
+.product__table tr:last-child td:last-child
+  border-bottom-right-radius: $tableBorderRadius
+
+.product__table th
+  border-right: $tableBorderWidth solid #ffe3e1
+  padding: 4px
+  font-weight: normal
+
+.product__table th:last-child,
+.product__table td:last-child
+  border-right: 0
+
+.product__table td
+  box-shadow: 0 0 0 $tableBorderWidth $basicPurpleColor
+  padding: 4px 2px
+
+.product__table tr:nth-child(even)
+  background-color: rgb(242, 243, 255)
+
+.product__table tr:nth-child(odd)
+  background-color: #f3cdec
+
+.product__table tr:first-child
+  background-color: $basicPurpleColor
+  color: white
+
+.product__table tr:hover
+  background-color: #dbb9d5
+
+.product__table tr:first-child:hover
+  background-color: $basicPurpleColor
+  color: white
+

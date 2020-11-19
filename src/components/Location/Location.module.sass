@@ -1,0 +1,93 @@
+.location
+    position: relative
+
+.location__wrapMap
+    position: relative
+    cursor: pointer
+    overflow: hidden
+    border-width: 1px
+    border-style: solid
+    border-color: rgb(204, 204, 204)
+    border-image: initial
+
+.location__mapTip
+    position: absolute
+    top: 20%
+    right: 50%
+    z-index: 1000
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 5px
+    display: none
+    padding: 5px 20px
+    border-radius: 5px
+    background: rgb(255, 255, 255)
+    border-width: 1px
+    border-style: solid
+    border-color: rgb(204, 204, 204)
+
+.location__map
+
+.location__mapIsNotClicked
+    pointer-events: none
+
+.location__isTip
+    display: block
+
+.contact_window
+    position: absolute
+    top: 20px
+    right: 50px
+    width: 300px
+    height: 350px
+    background-color: #fff5f5
+    z-index: 5
+    border-radius: 10px
+    //border: #b7b7b7 2px solid
+    box-shadow: 2px 1px 5px red
+
+.contact_window__title
+    text-align: center
+    font-size: 1.3rem
+    font-weight: bold
+    padding: 20px
+    color: #cc0000
+
+.contact_window__box
+    width: 90%
+    margin: auto
+
+.contact_window__phone, .contact_window__name,
+.contact_window__comment, .contact_window__button
+    height: 36px
+    width: 100%
+    margin-bottom: 3%
+    padding: 10px
+    border-radius: 5px
+    border: 1px solid #b5b5b5
+
+.contact_window__comment
+    margin-bottom: 1%
+    height: 42px
+
+.contact_window__agreement_box
+    width: 100%
+    border: 0
+    margin: 3px 0 10px 0
+
+.contact_window__agreement
+    float: left
+    width: 10px
+
+.contact_window__agreement_label
+    float: right
+    display: block
+    width: 94%
+    font-size: 16px
+    line-height: normal
+    margin: 0
+
+.contact_window__button
+    padding: 5px 10px
+    background: rgb(128, 255, 111)
+
+.contact_window__button:hover
+    background: rgb(70, 255, 45)

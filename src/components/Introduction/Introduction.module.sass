@@ -1,0 +1,59 @@
+@import './../../assets/global-styles/styles'
+
+.introduction
+  position: relative
+  width: 100%
+  height: 100%!important
+
+.introduction__container
+  background: rgba($basicPurpleColor, 0.8)
+
+.introduction__containerForContent
+  z-index: 10
+  position: absolute
+  top: 0
+  left: 0
+  display: block
+  will-change: transform
+
+.introduction__text_box
+  padding: 15px 25px
+  @media screen and (max-width: 767px)
+    padding: 15px 15px
+
+.introduction__text
+  text-align: justify
+  font-size: 1.3rem
+  color: white
+
+.introduction__background
+  clip: rect(0, auto, auto, 0)
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%!important
+
+.introduction__backgroundParallax
+  background-image: url(../../assets/img/img1.webp)
+  @media screen and (max-width: 900px)
+    background-image: url(../../assets/img/img1-small.webp)
+  @media screen and (max-width: 450px)
+    background-image: url(../../assets/img/img1-mobile.webp)
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  padding: 0
+  position: fixed
+  display: block
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%!important
+  transform: translateZ(0)
+  will-change: transform
+  z-index: 1
+  background-attachment: scroll!important
+
+.introduction__invisiblePlug
+  visibility: hidden

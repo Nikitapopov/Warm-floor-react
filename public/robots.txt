@@ -1,0 +1,17 @@
+User-agent: *
+Disallow:
+Disallow: /cgi-bin
+Disallow: /manager/
+Disallow: /assets/
+Disallow: /core/
+Disallow: /connectors/
+Disallow: /*.css
+Disallow: /*.js
+Disallow: /admin/
+Disallow: /searchResult.html
+Disallow: /registration.html
+Disallow: /rememberPassword.html
+Disallow: /index.html
+
+Host: https://teplye-poly43.ru
+Sitemap: https://teplye-poly43.ru/sitemap.xml

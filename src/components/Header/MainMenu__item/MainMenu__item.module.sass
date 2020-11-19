@@ -1,0 +1,32 @@
+//@import "../Header.module"
+
+.item
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: 0 0.66%
+  width: 32%
+  height: 100%
+  float: left
+  transition: 0.3s
+
+.item:hover .item__link
+  background-color: #ffba0c
+  color: #B22222
+  text-decoration: none
+  transition: 0.3s
+
+.item__link
+  cursor: pointer
+  border-radius: 30px
+  font-size: 1.4rem
+  color: white
+  padding: 5px 20px
+  @media screen and (max-width: 1100px)
+    padding: 5px 15px
+    font-size: 1.3rem
+  @media screen and (max-width: 970px)
+    padding: 5px 10px
+    font-size: 1.2rem
+  @media screen and (max-width: 820px)
+    font-size: 1.1rem

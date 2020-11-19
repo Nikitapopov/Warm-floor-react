@@ -1,0 +1,106 @@
+@import './../../assets/global-styles/styles'
+
+.header
+    position: fixed
+    left: 0
+    top: 0
+    height: 70px
+    width: 100%
+    padding: 0 7%
+    background-color: $basicRedColor
+    color: #fff
+    z-index: 20
+    overflow: hidden
+    border-bottom: #6f1414 1px solid
+    font-size: 1rem
+    @media screen and (max-width: 1080px)
+        font-size: 0.9rem
+    @media screen and (max-width: 970px)
+        font-size: 0.8rem
+    @media screen and (max-width: 880px)
+        font-size: 0.72rem
+    @media screen and (max-width: 767px)
+        padding: 0 2%
+    @media screen and (max-width: 380px)
+        height: 60px
+
+.header__isBurgerOpened
+    position: initial
+
+.header__burgerBox
+    position: relative
+
+.header__boxTitle
+    display: flex
+    flex-direction: column
+    float: right
+    height: 100%
+    width: 20%
+    @media screen and (max-width: 767px)
+        width: 90%
+        display: flex
+        flex-direction: row
+        justify-content: flex-end
+        align-items: center
+
+.header__title, .header__phone
+    margin: 0 auto
+    text-align: center
+    padding: 3px 7px
+    cursor: pointer
+    color: white
+
+.header__title
+    margin-top: 6px
+    font-weight: bold
+    font-size: 1.4em
+    @media screen and (max-width: 880px)
+        margin-top: 9px
+
+.header__title:hover
+    text-decoration: none
+    transition: 0.3s
+    color: #ffba0c !important
+
+.header__phone
+    margin-top: 2px
+    font-size: 1.3em
+    @media screen and (max-width: 767px)
+        justify-self: right
+
+.header__phone:hover
+    color: white
+
+.header__title, .header__phone
+    @media screen and (max-width: 767px)
+        font-size: 1.8rem
+        margin: 0 0 0 20px
+        padding: 10px 20px
+    @media screen and (max-width: 535px)
+        font-size: 1.5rem
+    @media screen and (max-width: 470px)
+        padding: 5px 10px
+        font-size: 1.4rem
+    @media screen and (max-width: 415px)
+        margin-left: 10px
+        font-size: 1.3rem
+    @media screen and (max-width: 380px)
+        margin-left: 5px
+        font-size: 1.2rem
+    @media screen and (max-width: 350px)
+        font-size: 1.1rem
+    @media screen and (max-width: 325px)
+        margin-left: 2px
+        padding: 2px 7px
+        font-size: 1.05rem
+    @media screen and (max-width: 295px)
+        padding: 2px 3px
+        font-size: 1rem
+
+.header__main_menu
+    float: right
+    width: 40%
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100%

@@ -1,0 +1,121 @@
+@import './../../../assets/global-styles/styles'
+
+.contactsForm__accordion
+  position: absolute
+  background-color: #fff5f5
+  z-index: 5
+  border-radius: 10px
+  box-shadow: 2px 2px 10px red
+  -webkit-animation: none
+  animation: none
+  top: 20px
+  right: 50px
+  width: 300px
+  @media screen and (max-width: 767px)
+    top: 10px
+    right: 20px
+  @media screen and (max-width: 365px)
+    top: 3px
+    right: 10px
+    width: 260px
+  @media screen and (max-width: 275px)
+    top: 1px
+    right: 3px
+    width: 210px
+
+
+@-webkit-keyframes shadowPulsing
+  0%
+    box-shadow: 2px 3px 10px red
+  50%
+    box-shadow: 5px 7px 20px red
+  100%
+    box-shadow: 2px 3px 10px red
+@keyframes shadowPulsing
+  0%
+    box-shadow: 2px 3px 10px red
+  50%
+    box-shadow: 5px 7px 20px red
+  100%
+    box-shadow: 2px 3px 10px red
+
+.contactsForm__accordion > div > button
+  width: 100%
+  border: 0
+  outline: none
+  background-color: #fff5f5
+  border-radius: 10px
+
+.contactsForm__isOpen
+  -webkit-animation: shadowPulsing 2s infinite
+  animation: shadowPulsing 2s infinite
+
+.form__title
+  text-align: center
+  font-size: 1.3rem
+  font-weight: bold
+  padding: 20px
+  color: $basicRedColor
+
+.contactsForm
+  position: relative
+  height: 100%
+
+.contactsForm__preloaderBox
+  position: absolute
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  height: 100%
+  left: 0
+  top: 0
+  background-color: rgba(1, 1, 1, 0.1)
+
+.contactsForm__preloaderBox img
+  height: 100%
+  opacity: 0.3
+
+
+.form__fieldsBox
+  width: 90%
+  margin: auto
+
+.form__fieldsBox input,
+.form__fieldsBox textarea,
+.form__fieldsBox button
+  height: 36px
+  width: 100%
+  margin-bottom: 3%
+  padding: 10px
+  border-radius: 5px
+  border: 1px solid #b5b5b5
+
+.form__fieldsBox textarea
+  margin-bottom: 1%
+  height: 42px
+  resize: none
+
+.form__agreementBox
+  width: 100%
+  border: 0
+  margin: 3px 0 10px 0
+
+.form__agreementBox input
+  float: left
+  width: 15px !important
+
+.form__agreementBox label
+  float: right
+  display: block
+  width: 92%
+  font-size: 0.9rem
+  line-height: normal
+  margin: 0
+
+.form__btn
+  padding: 5px 10px
+  background: rgb(128, 255, 111)
+
+.form__btn:hover
+  background: rgb(70, 255, 45)

@@ -1,0 +1,40 @@
+@import './../../assets/global-styles/styles'
+
+.footer
+    background-color: $basicRedColor
+    padding: 3px 5%
+    color: #fff
+
+.footer__logo_box
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100%
+    margin: auto
+
+.footer__title
+    font-size: 2rem
+
+.footer__desc_box
+    float: right
+    text-align: center
+    width: 100%
+
+.footer__desc
+    font-size: 1rem
+    @media screen and (max-width: 767px)
+        font-size: 0.8rem
+
+.footer__agreement_notice
+    margin: 5px 0
+    @media screen and (max-width: 767px)
+        margin: 3px 0
+
+.footer__agreement_notice a
+    text-decoration: underline
+    letter-spacing: -0.5px
+    font-size: 1rem
+    @media screen and (max-width: 767px)
+        font-size: 0.8rem
+    font-style: italic
+    color: #fff
